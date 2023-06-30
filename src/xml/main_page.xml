@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<offset x="20" y="20">
+    <win bg="[210]*3"/>
+    <default font="Courier" bgColor="[140]*3" hoverColor="[210]*3"/>
+
+    <vector margin="15" dir="v">
+        <!-- Buttons -->
+        <vector margin="5" dir="v">
+            <button id="load" text="загрузить скан"/>
+            <button id="cut" text="извлечь монеты"/>
+            <button id="align" text="автовыравнивание"/>
+            <button id="catalog" text="каталог"/>
+            <button id="save" text="сохранить"/>
+        </vector>
+        <vector margin="0" dir="v">
+            <vector margin="5" dir="v">
+                <text text="Настройка параметров:"/>
+                <ScrollView id="option" 
+                    pos="[0,0,380,25]" 
+                    speed="10"
+                    invert="True" 
+                    bg="[100]*3"/>
+            </vector>
+            <frozen>
+                <rect pos="[0,-5,380,255]" color="[100]*3" stroke="1"/>
+            </frozen>
+            <ScrollView id="settings" pos="[3,-2,380-6,255-6]" speed="30" bg="[210]*3"/>
+        </vector>
+    </vector>
+
+    <offset x="400" y="5">
+        <ScrollView id="ctx" pos="[0,0,400,450]" speed="30"/>
+    </offset>
+
+    <offset x="680" y="420">
+        <rect pos="[0,0,120,35]" color="[210]*3"/>
+        <vector x="10" y="10" margin="5">
+            <text id="t_zoom" text="100%"/>
+            <button id="+" text="+" coords="[0,-3]" padding="[7,2]"/>
+            <button id="-" text="-" coords="[0,-3]" padding="[7,2]"/>
+        </vector>
+    </offset>
+
+</offset>

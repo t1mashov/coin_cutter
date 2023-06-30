@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<offset x="2" y="1">
+    <default font="Courier" bgColor="[180]*3" hoverColor="[180]*3" size="16"/>
+    <vector margin="2">
+        <button id="select" text="извлечение монет" bgColor="[220]*3" hoverColor="[220]*3" padding="[5,3]"/>
+        <button id="align" text="автовыравнивание" padding="[5,3]"/>
+        <button id="coin" text="монета" padding="[5,3]"/>
+        <text text=" "/>
+    </vector>
+</offset>

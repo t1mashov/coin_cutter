@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<offset x="20" y="20">
+    <default font="Courier" bgColor="[140]*3" hoverColor="[210]*3"/>
+
+    <vector margin="20">
+        <vector dir="v">
+            <button id="back" text="назад"/>
+        </vector>
+        <ScrollView id="compared" pos="[0,0,700,450]"/>
+    </vector>
+
+    <frozen>
+        <rect pos="[350,0,15,500]" color="[210]*3"/>
+    </frozen>
+
+</offset>

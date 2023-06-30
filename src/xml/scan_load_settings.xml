@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<offset x="0" y="0">
+    <default font="Courier" bgColor="[140]*3" hoverColor="[210]*3"/>
+    <vector margin="5" dir='v'>
+
+        <text text="Параметры обработки изображения"/>
+        <text text="для нахождения монет:"/>
+
+        <vector margin="5" dir="v">
+            <vector margin="5" dir="v">
+                <text text="Яркость:" size="16"/>
+                <vector x="20">
+                    <SeekBar id="bright"
+                        pos="[0,0,290,25]"
+                        points="[round(i/100, 2) for i in range(100, 200, 5)]" 
+                        cursor="5"/>
+                    <text id="t_bright" text="1.25"/>
+                </vector>
+            </vector>
+            
+            <vector margin="5" dir="v">
+                <text text="Радиус размытия:" font="Courier" size="16"/>
+                <vector x="20">
+                    <SeekBar id="blur"
+                        pos="[0,0,290,25]"
+                        points="[round(i/10, 2) for i in range(10, 80)]" 
+                        cursor="20"/>
+                    <text id="t_blur" text="3.0"/>
+                </vector>
+            </vector>
+
+            <vector margin="5" dir="v">
+                <text text="Дополнительный радиус удаления:" font="Courier" size="16"/>
+                <vector x="20">
+                    <SeekBar id="add_del"
+                        pos="[0,0,290,25]"
+                        points="[i for i in range(1, 51)]" 
+                        cursor="9"/>
+                    <text id="t_add_del" text="10"/>
+                </vector>
+            </vector>
+        </vector>
+    </vector>
+</offset>

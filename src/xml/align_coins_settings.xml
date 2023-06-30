@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<offset x="0" y="0">
+    <default font="Courier" bgColor="[140]*3" hoverColor="[210]*3"/>
+    <vector margin="5" dir='v'>
+
+        <text text="Параметры автовыравнивания монет"/>
+
+        <vector margin="5" dir="v">
+            <vector margin="5" dir="v">
+                <text text="Максимальный угол поворота (от), (до):" size="16"/>
+                <vector x="10">
+                    <vector margin="0" dir="v">
+                        <SeekBar id="from"
+                            pos="[0,0,160,25]"
+                            points="[i for i in range(-90, 0+1)]" 
+                            cursor="45"/>
+                        <text id="t_from" text="-45" coords="[70,0]"/>
+                    </vector>
+                    <vector margin="0" dir="v">
+                        <SeekBar id="to"
+                            pos="[0,0,160,25]"
+                            points="[i for i in range(0, 90+1)]" 
+                            cursor="45"/>
+                        <text id="t_to" text="45" coords="[80,0]"/>
+                    </vector>
+                </vector>
+            </vector>
+            
+            
+        </vector>
+    </vector>
+</offset>

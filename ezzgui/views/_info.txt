@@ -1,0 +1,12 @@
+
+
+Views, у которых фиксированный размер: pos=[x,y,w,h]
+(Table, TextArea, Rect)
+
+Views с неизвестным размером: coords=(x,y)
+(TextView, Button)
+
+
+Все views должны иметь методы:
++ getSize() возвращающий размеры
++ getStart() возвращающий начальные координаты
